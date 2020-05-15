@@ -8,7 +8,9 @@ class Dog # Add your code here
   end
   
   def self.print_all
-    puts name
+    @@all.each do |dog|
+      puts dog.name
+    end  
   end
   
   def self.clear_all
@@ -21,9 +23,7 @@ class Dog # Add your code here
   end
   
   def self.all
-    @@all.each do |dog|
-      puts dog.name
-    end  
+    @@all
   end
 
 end
